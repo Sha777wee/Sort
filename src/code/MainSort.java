@@ -1,6 +1,7 @@
 package code;
 
 import code.sort.bubbleSort.BubbleSort;
+import code.sort.bucketSort.BucketSort;
 import code.sort.insertionSort.InsertionSort;
 import code.sort.mergeSort.MergeSort;
 import code.sort.quickSort.QuickSort;
@@ -31,6 +32,7 @@ public class MainSort {
         System.out.println(Arrays.toString(ShellSort.sort(array)));
         System.out.println(Arrays.toString(MergeSort.sort(array)));
         System.out.println(Arrays.toString(QuickSort.sort(array, 0, n - 1)));
+        System.out.println(Arrays.toString(BucketSort.sort(array, 5)));
     }
 
 }
